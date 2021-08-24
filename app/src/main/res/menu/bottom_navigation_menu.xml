@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all_files"
+        android:icon="@drawable/ic_folder_24"
+        android:enabled="true"
+        android:iconTint="@color/pink_200"
+        android:title="@string/all_files"
+        />
+    <item
+        android:id="@+id/fav_files"
+        android:enabled="true"
+        android:iconTint="@color/pink_200"
+        android:icon="@drawable/ic_favorite_full_24"
+        android:title="@string/favorite_files" />
+</menu>

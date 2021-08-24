@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/docTypeImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_msword_24" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="225dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:text="Нет игры нет жизни 5 том"
+        android:textColor="#575757"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@+id/docTypeImg"
+        app:layout_constraintTop_toTopOf="@+id/docTypeImg" />
+
+    <ImageButton
+        android:id="@+id/more_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_more_vert_24" />
+
+    <ImageButton
+        android:id="@+id/like_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/more_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_favorite_border_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

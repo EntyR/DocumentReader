@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/allDocsFragment">
+
+    <fragment
+        android:id="@+id/allDocsFragment"
+        android:name="com.example.documentreader.ui.fragments.AllDocsFragment"
+        android:label="fragment_all_docs"
+        tools:layout="@layout/fragment_all_docs" >
+        <action
+            android:id="@+id/action_allDocsFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_allDocsFragment_self"
+            app:destination="@id/allDocsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.documentreader.ui.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_allDocsFragment"
+            app:destination="@id/allDocsFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_self"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+</navigation>
